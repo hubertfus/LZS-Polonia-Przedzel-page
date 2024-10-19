@@ -3,35 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LZS Przędzel 1939 - Oficjalna Strona Klubu</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
-    <title>LZS Przędzel 1939</title>
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a href="index.html">Strona główna</a></li>
-          <li><a href="#">Aktualności</a></li>
-          <li><a href="#">O klubie</a></li>
-        </ul>
-        <div id="header-title-container">
-          <div id="header-title-icons-container">
-            <a href="#"><img src="images/facebook.svg" alt="fb-icon" /></a>
-            <a href="#"><img src="images/instagram.svg" alt="ig-icon" /></a>
-            <a href="#"><img src="images/youtube.svg" alt="yt-icon" /></a>
+        <div>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/profile.php?id=100057232098944"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/images/facebook.svg" alt="fb-icon" />
+            </a>
+            <a href="#">
+              <img src="/images/instagram.svg" alt="ig-icon" />
+            </a>
+            <a href="#">
+              <img src="/images/youtube.svg" alt="yt-icon" />
+            </a>
           </div>
-          <a href="index.html"><h1>LZS Przędzel 1939</h1></a>
+          <a href="/index.html" class="logo">LZS Przędzel 1939</a>
         </div>
-        <ul>
-          <li><a href="#">Terminarz</a></li>
-          <li><a href="team-roster.html">Kadra</a></li>
-          <li><a href="/gallery.html">Galeria</a></li>
-        </ul>
+        <div class="nav-links" id="navLinks">
+          <button class="close-menu" id="closeMenu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <ul>
+            <li><a href="/index.html">Strona główna</a></li>
+            <li><a href="#news">Aktualności</a></li>
+            <li><a href="#about">O klubie</a></li>
+            <li><a href="#schedule">Terminarz</a></li>
+            <li><a href="#squad">Kadra</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+          </ul>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
       </nav>
     </header>
 
@@ -39,112 +82,168 @@
       <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <div class="content-container">
-            <h1 class="title">Pasja, Tradicja, Zwycięstwo</h1>
-            <p class="description">
-              LZS Przędzel 1939 – klub, który łączy pokolenia. Dołącz do naszej
-              sportowej rodziny i stań się częścią niezapomnianych chwil na
-              boisku!
-            </p>
-            <a href="#" class="btn">Sprawdź nasz terminarz</a>
-          </div>
+          <h1>Pasja, Tradycja, Zwycięstwo</h1>
+          <p>
+            LZS Przędzel 1939 – klub, który łączy pokolenia. Dołącz do naszej
+            sportowej rodziny i stań się częścią niezapomnianych chwil na
+            boisku!
+          </p>
+          <a href="#" class="btn">Sprawdź nasz terminarz</a>
         </div>
       </section>
 
-      <section class="transition-section">
-        <div class="transition-content">
-          <h2>Dołącz do nas!</h2>
-          <p>Zostań częścią naszej drużyny i śledź nasze osiągnięcia.</p>
-          <a href="#" class="btn">Dowiedz się więcej</a>
-        </div>
-      </section>
-
-      <section class="news-section">
+      <section id="news" class="news">
         <h2>Aktualności</h2>
-        <div class="news-item">
-          <h3>Koniec współpracy z trenerem</h3>
-          <p>
-            <strong>Autor:</strong> treneiro.ks,
-            <strong>Data:</strong> 2018-08-18
-          </p>
-          <p>
-            W dniu 7 sierpnia 2018 zakończono współpracę z trenerem Januszem
-            Dmitrowskim. Obowiązki przejął Łukasz Kluk.
-          </p>
-          <a href="#" class="more">więcej »</a>
+        <div class="news-grid">
+          <div class="news-item">
+            <h3>LZS Przędzel w podbramkowej sytuacji</h3>
+            <p>
+              Klub może zostać wykluczony z rozgrywek z powodu braków kadrowych.
+              Apelują o wsparcie i obecność na najbliższym meczu. Każdy walkower
+              może zakończyć działalność klubu.
+            </p>
+            <div class="news-footer">
+              <a href="/news.html#news1" class="read-more">Czytaj więcej</a>
+              <span class="date">11 paź 2024</span>
+            </div>
+          </div>
+          <div class="news-item">
+            <h3>Kolejka nr 10 KEEZA "B" Klasa gr II Stalowa Wola</h3>
+            <p>
+              LZS Przędzel zagra z LKS Huragan Zdziechowice. Braki kadrowe mogą
+              zagrozić przyszłości klubu. Zapraszamy kibiców na mecz.
+            </p>
+            <div class="news-footer">
+              <a href="/news.html#news2" class="read-more">Czytaj więcej</a>
+              <span class="date">11 paź 2024</span>
+            </div>
+          </div>
+          <div class="news-item">
+            <h3>Czarne chmury nad LZS Przędzel</h3>
+            <p>
+              Tylko dziewięciu zawodników było gotowych do gry, co pokazuje
+              trudną sytuację kadrową klubu. Przyszłość LZS Przędzel jest
+              zagrożona.
+            </p>
+            <div class="news-footer">
+              <a href="/news.html#news3" class="read-more">Czytaj więcej</a>
+              <span class="date">22 września 2024</span>
+            </div>
+          </div>
         </div>
-        <div class="news-item">
-          <h3>Koniec sezonu - Kolejka 26.</h3>
-          <p>
-            <strong>Autor:</strong> treneiro.ks,
-            <strong>Data:</strong> 2018-06-18
-          </p>
-          <p>
-            W meczu z KS Majdan Łętowski padł remis 2:2. Sezon zakończony na
-            naukę i ogrywanie młodych zawodników.
-          </p>
-          <a href="#" class="more">więcej »</a>
-        </div>
-        <div class="news-item">
-          <h3>Kolejka 25. - LZS Przędzel 4:2 KS Łukowa</h3>
-          <p>
-            <strong>Autor:</strong> treneiro.ks,
-            <strong>Data:</strong> 2018-06-10
-          </p>
-          <p>
-            Udany mecz z KS Łukowa, wygrana 4:2. Kluczowe bramki zdobył Konrad
-            Śnios.
-          </p>
-          <a href="#" class="more">więcej »</a>
-        </div>
-        <a href="#" class="btn">Zobacz więcej aktualności</a>
+        <a href="/news.html" class="btn">Zobacz więcej aktualności</a>
       </section>
 
-      <section class="team-roster-section">
+      <section id="squad" class="squad">
         <h2>Kadra</h2>
-        <div class="team-roster">
-          <div class="team-member">
-            <img src="images/person-circle.svg" alt="Damian Śnios" />
-            <div class="member-info">
-              <p class="name">Śnios Damian</p>
-              <p class="position">Napastnik</p>
+        <div class="squad-grid">
+          <div class="player">
+            <div class="player-avatar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
             </div>
+            <h3>Śnios Damian</h3>
+            <p>Napastnik</p>
           </div>
-          <div class="team-member">
-            <img src="images/person-circle.svg" alt="Jakub Lelit" />
-            <div class="member-info">
-              <p class="name">Lelit Jakub</p>
-              <p class="position">Napastnik</p>
+          <div class="player">
+            <div class="player-avatar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
             </div>
+            <h3>Lelit Jakub</h3>
+            <p>Napastnik</p>
           </div>
-          <div class="team-member">
-            <img src="images/person-circle.svg" alt="Marcin Iskra" />
-            <div class="member-info">
-              <p class="name">Iskra Marcin</p>
-              <p class="position">Napastnik</p>
+          <div class="player">
+            <div class="player-avatar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
             </div>
+            <h3>Iskra Marcin</h3>
+            <p>Napastnik</p>
           </div>
-          <div class="team-member">
-            <img src="images/person-circle.svg" alt="Dawid Ptak" />
-            <div class="member-info">
-              <p class="name">Ptak Dawid</p>
-              <p class="position">Napastnik</p>
+          <div class="player">
+            <div class="player-avatar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
             </div>
+            <h3>Ptak Dawid</h3>
+            <p>Napastnik</p>
           </div>
-          <div class="team-member">
-            <img src="images/person-circle.svg" alt="Patryk Bałamut" />
-            <div class="member-info">
-              <p class="name">Bałamut Patryk</p>
-              <p class="position">Bramkarz</p>
+          <div class="player">
+            <div class="player-avatar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
             </div>
+            <h3>Bałamut Patryk</h3>
+            <p>Bramkarz</p>
           </div>
         </div>
         <a href="#" class="btn">Zobacz pełną kadrę</a>
       </section>
 
-      <section>
-        <div class="club-info-section">
-          <h2>O Klubie</h2>
+      <section id="about" class="about">
+        <h2>O Klubie</h2>
+        <div class="about-content">
           <p>
             <strong>Ludowy Zespół Sportowy Polonia Przędzel</strong> to klub
             piłkarski założony w 1939 roku. Barwy klubu to zielono-czarne.
@@ -161,24 +260,113 @@
         </div>
       </section>
 
-      <section class="gallery-section">
+      <section id="gallery" class="gallery">
         <h2>Galeria</h2>
-        <div class="gallery-items-container">
+        <div class="gallery-grid">
           <div class="gallery-item">
-            <img src="images/gallery1.jpg" alt="Galeria 1" />
+            <img
+              src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Gallery image 1"
+            />
+            <div class="overlay">
+              <span>Zobacz więcej</span>
+            </div>
           </div>
           <div class="gallery-item">
-            <img src="images/gallery2.jpg" alt="Galeria 2" />
+            <img
+              src="https://images.unsplash.com/photo-1551958219-acbc608c6377?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Gallery image 2"
+            />
+            <div class="overlay">
+              <span>Zobacz więcej</span>
+            </div>
           </div>
           <div class="gallery-item">
-            <img src="images/gallery3.jpg" alt="Galeria 3" />
+            <img
+              src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Gallery image 3"
+            />
+            <div class="overlay">
+              <span>Zobacz więcej</span>
+            </div>
           </div>
         </div>
-        <a href="gallery.html" class="btn">Zobacz więcej zdjęć</a>
+        <a href="#" class="btn">Zobacz więcej zdjęć</a>
       </section>
     </main>
+
     <footer>
-      <p>&copy; 2024 LZS Przędzel 1939. Wszelkie prawa zastrzeżone.</p>
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>LZS Przędzel 1939</h3>
+          <p>Pasja, Tradycja, Zwycięstwo</p>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://www.facebook.com/profile.php?id=100057232098944"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
+              ></path>
+              <polygon
+                points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+              ></polygon>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2024 LZS Przędzel 1939. Wszelkie prawa zastrzeżone.
+      </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
