@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   
-    const animateOnScroll = function() {
+    {const animateOnScroll = function() {
       const elements = document.querySelectorAll('.news-item, .player, .gallery-item');
       
       elements.forEach(element => {
@@ -47,4 +47,16 @@ document.addEventListener('DOMContentLoaded', function() {
   
     window.addEventListener('scroll', animateOnScroll);
     animateOnScroll();
-  });
+
+    const animatedElements = document.querySelectorAll(".animate-slide");
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    });
+  
+    animatedElements.forEach((el) => observer.observe(el));}
+});
